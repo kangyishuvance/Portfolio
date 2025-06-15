@@ -1,55 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <title>Your Name – Portfolio</title>
+  <title>Vance Kang – Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!----— quick, minimal styling —---->
   <style>
     :root {
-      --brand: #0d6efd;          /* main accent colour */
-      --text:  #222;
-      --bg:    #fff;
+      --brand: #0d6efd;
+      /* main accent colour */
+      --text: #222;
+      --bg: #fff;
       --light: #f5f7fa;
-      --code:  #f0f2f4;
+      --code: #f0f2f4;
       font-size: 16px;
     }
-    * { box-sizing: border-box; margin: 0; }
-    body { font-family: system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.5; }
-    h1, h2 { font-weight: 700; margin-bottom: .4em; }
-    a   { color: var(--brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
 
-    header { background: var(--light); padding: 3rem 1rem; text-align: center; }
-    header h1 { font-size: 2.25rem; margin-bottom: .25em; }
-    header p  { font-size: 1.1rem; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
 
-    nav ul { display: flex; justify-content: center; gap: 1.2rem; list-style: none; margin-top: 1.5rem; }
-    nav a { font-weight: 600; }
+    body {
+      font-family: system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
 
-    main { max-width: 800px; margin: 3rem auto; padding: 0 1rem; display: grid; gap: 3rem; }
+    h1,
+    h2 {
+      font-weight: 700;
+      margin-bottom: .4em;
+    }
 
-    section { scroll-margin-top: 5rem; }
-    .project-grid { display: grid; gap: 1.5rem; }
-    .project { padding: 1rem; border: 1px solid var(--code); border-radius: 8px; background: var(--light); }
-    .project h3 { margin-bottom: .3rem; }
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
 
-    .skill-list, .meta { display: flex; flex-wrap: wrap; gap: .5rem .75rem; }
-    .skill-list span, .meta span { background: var(--code); padding: .25rem .5rem; border-radius: 4px; font-size: .9rem; }
+    a:hover {
+      text-decoration: underline;
+    }
 
-    footer { text-align: center; padding: 3rem 1rem 4rem; background: var(--light); font-size: .9rem; }
+    header {
+      background: var(--light);
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      margin-bottom: .25em;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      list-style: none;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 3rem;
+    }
+
+    section {
+      scroll-margin-top: 5rem;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .project {
+      padding: 1rem;
+      border: 1px solid var(--code);
+      border-radius: 8px;
+      background: var(--light);
+    }
+
+    .project h3 {
+      margin-bottom: .3rem;
+    }
+
+    .skill-list,
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem .75rem;
+    }
+
+    .skill-list span,
+    .meta span {
+      background: var(--code);
+      padding: .25rem .5rem;
+      border-radius: 4px;
+      font-size: .9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+      background: var(--light);
+      font-size: .9rem;
+    }
   </style>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JRYWZMS5E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JRYWZMS5E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-3JRYWZMS5E');
-</script>
+    gtag('config', 'G-3JRYWZMS5E');
+  </script>
 </head>
+
 <body>
 
   <!----— Hero / header —---->
@@ -73,8 +156,8 @@
     <section id="about">
       <h2>About</h2>
       <p>Hello! I’m <strong>Your Name</strong>, a PE in Singapore with seven years’ experience delivering mega-projects
-         (hospitals, tunnels, high-rise) and a passion for Python-driven automation.
-         I turn repetitive engineering workflows into clean, data-driven pipelines.</p>
+        (hospitals, tunnels, high-rise) and a passion for Python-driven automation.
+        I turn repetitive engineering workflows into clean, data-driven pipelines.</p>
     </section>
 
     <!-- Skills -->
@@ -145,4 +228,5 @@
 
   <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
+
 </html>
